@@ -1,0 +1,302 @@
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(245, 232, 219);
+
+}
+nav{
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    border-radius: 20px;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    grid-column: 2 / 3;
+    margin-top: 20px;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+}
+.nav-link:hover{
+    background-color: #FF00C6;
+    border-radius: 10px;
+    padding: 10px;
+}
+.logo{
+    background-image: url(images/fuzz-logo.svg);
+    color: white;
+    height: 60px;
+    background-repeat: no-repeat;
+    grid-column: 1 / 2;
+    margin-left: 20px;
+}
+.nav-item{
+    padding: 20px;
+}
+
+.welcome {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+    padding: none;
+    margin: 1%;
+    border-radius: 20px;
+}
+.content-list{
+    list-style: none;
+    text-indent: 10px;
+    margin: 10px 10px;
+}
+.learn-more{
+    /*Animation*/
+    opacity: 0;
+    animation-name: fadeBounce;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: fadeBounce;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    /* End Animation, Shorthand: fadeBounce 1s forwards*/
+    background-color: black;
+    border: 1px solid #FF00C6;
+    color:#FF00C6;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 5px 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 20px;
+} 
+.learn-more:hover{
+    background-color: black;
+    border: 1px solid aquamarine;
+    color:aquamarine;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 5px 5px #FF00C6;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 20px; 
+}
+
+.welcome-image {
+    content: "";
+    background: url("images/fuzz.svg") center center no-repeat;
+    background-size: cover;
+    width: 300px;
+    text-align: center;
+    padding: 100px 0;
+  }
+.welcome-image:hover{
+    content: "";
+    animation: buzz 0.5s forwards;
+    -webkit-animation: buzz 0.5s forwards;
+    background: url("images/fuzz-pink.svg") center center no-repeat;
+    background-size: cover;
+    width: 300px;
+    text-align: center;
+    padding: 100px 0; 
+}
+.about {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+    padding: none;
+    margin: 1%;
+    border-radius: 20px;
+}
+.studio {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+    padding: none;
+    margin: 1%;
+    border-radius: 20px;
+}
+.references {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+    padding: none;
+    margin: 1%;
+    border-radius: 20px;
+}
+.contact {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+    padding: none;
+    margin: 1%;
+    border-radius: 20px;
+}
+footer {
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+    padding: none;
+    margin: 1%;
+    border-radius: 20px;
+}
+footer .address{
+    margin-left: 50px;
+}
+.email{
+    margin: 20px;
+}
+
+/*Bouncing Animation*/
+@keyframes fadeBounce {
+    0%{
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+    40%{
+        transform: translateY(0);
+    }
+    55%{
+        transform: translateY(-6px)  
+    }
+    70%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    85%{
+        transform: translateY(-3px)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+-webkit-@keyframes fadeBounce {
+    0%{
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+    40%{
+        transform: translateY(0);
+    }
+    55%{
+        transform: translateY(-6px)  
+    }
+    70%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    85%{
+        transform: translateY(-3px)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*End Bouncing Animation*/
+
+/*Buzzing Animation*/
+@keyframes buzz {
+    0%{
+        transform: translateY(-4px);
+    }
+    10%{
+        transform: translateY(+4px);
+    }
+    20%{
+        transform: translateX(-4px);
+    }
+    30%{
+        transform: translateX(+4px);
+    }
+    40%{
+        transform: translateY(-4px);
+    }
+    50%{
+        transform: translateY(+4px);
+    }
+    60%{
+        transform: translateX(-4px);
+    }
+    70%{
+        transform: translateX(+4px);
+    }
+    80%{
+        transform: translateY(-2px);
+    }
+    90%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-4px);
+    }
+}
+-webkit-@keyframes buzz {
+    0%{
+        transform: translateY(-4px);
+    }
+    10%{
+        transform: translateY(+4px);
+    }
+    20%{
+        transform: translateX(-4px);
+    }
+    30%{
+        transform: translateX(+4px);
+    }
+    40%{
+        transform: translateY(-4px);
+    }
+    50%{
+        transform: translateY(+4px);
+    }
+    60%{
+        transform: translateX(-4px);
+    }
+    70%{
+        transform: translateX(+4px);
+    }
+    80%{
+        transform: translateY(-2px);
+    }
+    90%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-4px);
+    }
+}
+/*End Buzzing Animation*/
