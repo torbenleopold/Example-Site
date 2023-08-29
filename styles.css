@@ -36,7 +36,7 @@ nav{
     padding: 10px;
 }
 .logo{
-    background-image: url(images/fuzz-logo.svg);
+    background-image: url(Images/fuzz-logo.svg);
     color: white;
     height: 60px;
     background-repeat: no-repeat;
@@ -101,7 +101,7 @@ nav{
 
 .welcome-image {
     content: "";
-    background: url("images/fuzz.svg") center center no-repeat;
+    background: url("Images/fuzz.svg") center center no-repeat;
     background-size: cover;
     width: 300px;
     text-align: center;
@@ -111,7 +111,7 @@ nav{
     content: "";
     animation: buzz 0.5s forwards;
     -webkit-animation: buzz 0.5s forwards;
-    background: url("images/fuzz-pink.svg") center center no-repeat;
+    background: url("Images/fuzz-pink.svg") center center no-repeat;
     background-size: cover;
     width: 300px;
     text-align: center;
